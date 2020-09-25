@@ -11,20 +11,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-    <div class="w3-container">
-        <h1 class="w3-center">Matias Alarcón</h1>
-        <div class="w3-bar w3-black">
-            <a href="./Ejercicio1/ejercicio1.php" class="w3-bar-item w3-button">Ejercicio 1</a>
-            <a href="#" class="w3-bar-item w3-button">Ejercicio 2</a>
-            <a href="#" class="w3-bar-item w3-button">Ejercicio 3</a>
-            <a href="#" class="w3-bar-item w3-button">Ejercicio 4</a>
-            <a href="#" class="w3-bar-item w3-button">Ejercicio 5</a>
-            <a href="#" class="w3-bar-item w3-button">Ejercicio 6</a>
-        </div>
-        <div class="w3-center">
-            <iframe style="width:100%;height: 70vh" src="./files/PHP_-Trabajo-pra--ctico-N--4---2020-2do-cuatri.pdf"></iframe>
-        </div>
+    <div>
+        <?php
+            $directorio=".";
+            include './files/header.php';
+        ?>
     </div>
+    <div class="w3-center">
+        <iframe style="width:100%;height: 70vh" src="./files/PHP_-Trabajo-pra--ctico-N--4---2020-2do-cuatri.pdf"></iframe>
+    </div>
+
 
 </body>
 </html>

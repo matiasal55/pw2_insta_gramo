@@ -8,8 +8,7 @@ if(isset($_POST['publicar'])) {
         $archivotmp=$_FILES['foto']['tmp_name'];
         $formato=end(explode(".",$nombreFoto));
         if($ejercicio->verificarFormato($nombreFoto)) {
-            $nuevo=$ejercicio->moverArchivo($archivotmp,"../imagenes",$nombreIngresado,$formato);
-            header("location:ejercicio1.php");
+            $ejercicio->moverArchivo($archivotmp,"./imagenes",$nombreIngresado,$formato);
         }
         else echo "El formato no corresponde a una fotografía";
     }

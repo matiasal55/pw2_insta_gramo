@@ -20,6 +20,6 @@ class Ejercicio1
         $timestamp=$fecha->getTimestamp();
         $nuevaRuta="$carpeta/$nombre"."_"."$timestamp.$formato";
         move_uploaded_file($temporal,$nuevaRuta);
-        return $nuevaRuta;
+        header("location:ejercicio1.php");
     }
 }
