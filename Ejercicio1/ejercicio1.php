@@ -1,8 +1,5 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE);
 require_once './Ejercicio1.php';
-
-$ejercicio=new Ejercicio1();
 ?>
 <!doctype html>
 <html lang="es">
@@ -45,20 +42,12 @@ $ejercicio=new Ejercicio1();
             ";
         ?>
     </div>
-    <div class="w3-center">
-        <h3>Subir foto</h3>
-        <form action="./ejercicio1.php" method="POST" enctype="multipart/form-data">
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre">
-            <label for="foto">Foto: </label>
-            <input type="file" name="foto">
-            <button type="submit" name="publicar">Publicar</button>
-            <p>
-                <?php
-                    include './message.php';
-                ?>
-            </p>
-        </form>
+    <div class="w3-center w3-padding-48">
+        <?php
+            $path_action="ejercicio1";
+            $directorioFotos="./imagenes";
+            include "./subirFotos.php";
+        ?>
     </div>
 </body>
 </html>

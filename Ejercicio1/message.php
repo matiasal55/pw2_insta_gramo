@@ -10,7 +10,7 @@ if(isset($_POST['publicar'])) {
         if($ejercicio->verificarFormato($nombreFoto)) {
             $ejercicio->moverArchivo($archivotmp,"./imagenes",$nombreIngresado,$formato);
         }
-        else echo "El formato no corresponde a una fotografía";
+        else echo "<p>El formato no corresponde a una fotografía</p>";
     }
-    else echo "No se pudo subir la foto";
+    else echo "<p>No se pudo subir la foto</p>";
 }
