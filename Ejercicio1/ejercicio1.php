@@ -8,7 +8,7 @@ require_once './Ejercicio1.php';
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 1 - Insta-gramo</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
@@ -19,6 +19,7 @@ require_once './Ejercicio1.php';
         ?>
     </div>
     <div class="w3-center w3-padding-48">
+        <h2 class="w3-center">Insta-gramo</h2>
         <?php
         $archivos=scandir("./imagenes");
         if(sizeof($archivos)>2) {
@@ -27,7 +28,7 @@ require_once './Ejercicio1.php';
                     $nombre = substr($archivo, 0, strripos($archivo, "_"));
                     echo "
                     <div class='w3-card' style='width:500px;margin: auto'>
-                        <img src='./imagenes/$archivo' class='w3-image' style='width: 400px'>
+                        <img src='./imagenes/$archivo' class='w3-image w3-padding-16' style='max-width: 400px'>
                         <p>" . $nombre . "</p>
                     </div>";
                 }

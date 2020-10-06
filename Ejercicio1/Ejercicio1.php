@@ -15,11 +15,11 @@ class Ejercicio1
         return false;
     }
 
-    public function moverArchivo($temporal,$carpeta,$nombre,$formato,$path_location){
+    public function moverArchivo($temporal,$carpeta,$nombre,$formato,$path_action){
         $fecha=new DateTime();
         $timestamp=$fecha->getTimestamp();
         $nuevaRuta="$carpeta/$nombre"."_"."$timestamp.$formato";
         move_uploaded_file($temporal,$nuevaRuta);
-        header("location:".$path_location.".php");
+        header("location:".$path_action.".php");
     }
 }

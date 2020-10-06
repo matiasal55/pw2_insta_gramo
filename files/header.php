@@ -4,9 +4,9 @@ echo "<h1 class='w3-center'>Matias Alarcón</h1>
             <a href='".$directorio."/index.php' class='w3-bar-item w3-button'>Home</a>
             <a href='".$directorio."/Ejercicio1/ejercicio1.php' class='w3-bar-item w3-button'>Ejercicio 1</a>
             <a href='".$directorio."/Ejercicio2/ejercicio2.php' class='w3-bar-item w3-button'>Ejercicio 2</a>
-            <a href='#' class='w3-bar-item w3-button'>Ejercicio 3</a>
-            <a href='#' class='w3-bar-item w3-button'>Ejercicio 4</a>
-            <a href='#' class='w3-bar-item w3-button'>Ejercicio 5</a>
-            <a href='#' class='w3-bar-item w3-button'>Ejercicio 6</a>
+            <a href='".$directorio."/Ejercicio3/ejercicio3.php' class='w3-bar-item w3-button'>Ejercicio 3</a>
+            <a href='".$directorio."/Ejercicio4/ejercicio4.php' class='w3-bar-item w3-button'>Ejercicio 4</a>
+            <a href='".$directorio."/Ejercicio5/ejercicio5.php' class='w3-bar-item w3-button'>Ejercicio 5</a>
+            <a href='".$directorio."/Ejercicio6/ejercicio6.php' class='w3-bar-item w3-button'>Ejercicio 6</a>
         </div>";
 ?>
